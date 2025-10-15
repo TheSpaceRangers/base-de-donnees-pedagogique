@@ -1,0 +1,39 @@
+id_audit,table_name,colonne,anomalie,commentaire,date_audit
+1,clients,nom,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+2,clients,prenom,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+3,clients,email,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+4,clients,telephone,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+5,clients,adresse,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+6,clients,ville,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+7,clients,code_postal,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+8,clients,pays,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+9,clients,date_inscription,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+10,employes,nom,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+11,employes,prenom,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+12,employes,email,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+13,employes,poste,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+14,employes,salaire,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+15,employes,departement,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+16,employes,date_embauche,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+17,employes,manager_id,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+18,factures,id_client,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+19,factures,date_facture,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+20,factures,montant_total,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+21,factures,statut,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+22,factures,commentaire,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+23,lignes_facture,id_facture,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+24,lignes_facture,id_produit,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+25,lignes_facture,quantite,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+26,lignes_facture,prix_unitaire,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+27,produits,nom_produit,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+28,produits,categorie,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+29,produits,prix,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+30,produits,stock,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+31,produits,date_creation,Nullable injustifié,Ajouter contrainte NOT NULL,2025-10-15 13:32:13
+32,clients,date_inscription,Type inadapté,Doit être DATE au lieu de VARCHAR(20),2025-10-15 13:32:13
+33,factures,id_client,Clé étrangère manquante,Doit référencer clients(id_client),2025-10-15 13:32:13
+34,lignes_facture,id_facture,Clé étrangère manquante,Doit référencer factures(id_facture),2025-10-15 13:32:13
+35,lignes_facture,id_produit,Clé étrangère manquante,Doit référencer produits(id_produit),2025-10-15 13:32:13
+36,clients,email,Doublons détectés,Doublon sur marie.dupont@gmail.com,2025-10-15 13:32:13
+37,produits,prix,Valeur incohérente,Prix négatif : -320.00,2025-10-15 13:32:13
+38,clients,email,Email manquant,Email NULL ou vide,2025-10-15 13:32:13
