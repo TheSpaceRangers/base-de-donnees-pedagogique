@@ -1,0 +1,38 @@
+id,table_name,column_name,data_type,is_nullable,constraint_type,classification,commentaire
+1,air_quality_global,city,text,YES,,Publique,Nom de la ville concernée par la mesure de qualité de l’air
+2,air_quality_global,country,text,YES,,Publique,Pays associé à la ville mesurée
+3,air_quality_global,data_quality,text,YES,,Interne,
+4,air_quality_global,data_source,text,YES,,Interne,"Source de la donnée environnementale (API, organisme officiel, etc.)"
+5,air_quality_global,latitude,double,YES,,Interne,
+6,air_quality_global,longitude,double,YES,,Interne,
+7,air_quality_global,measurement_method,text,YES,,Interne,
+8,air_quality_global,month,bigint,YES,,Publique,
+9,air_quality_global,no2_ugm3,double,YES,,Publique,Concentration moyenne de dioxyde d’azote (NO₂) en µg/m³
+10,air_quality_global,pm25_ugm3,double,YES,,Publique,Concentration moyenne de particules fines (PM2.5) en µg/m³
+11,air_quality_global,year,bigint,YES,,Publique,
+12,co2_emissions,co2_ppm,double,YES,,Publique,Teneur moyenne en CO₂ dans l’atmosphère (ppm)
+13,co2_emissions,data_source,text,YES,,Interne,
+14,co2_emissions,decimal_date,double,YES,,Publique,
+15,co2_emissions,measurement_type,text,YES,,Interne,"Type de mesure (ex. observation directe, reconstitution)"
+16,co2_emissions,month,bigint,YES,,Publique,
+17,co2_emissions,year,bigint,YES,,Publique,
+18,ice_core_co2,age_uncertainty_years,double,YES,,Publique,
+19,ice_core_co2,calendar_year,bigint,YES,,Publique,Année calendaire correspondant à la carotte de glace analysée
+20,ice_core_co2,co2_ppm,double,YES,,Publique,Quantité de CO₂ mesurée dans les bulles d’air de la glace (ppm)
+21,ice_core_co2,data_quality,text,YES,,Interne,
+22,ice_core_co2,data_source,text,YES,,Interne,
+23,ice_core_co2,ice_core_site,text,YES,,Publique,Nom du site glaciaire d’extraction de la carotte
+24,ice_core_co2,measurement_method,text,YES,,Interne,
+25,ice_core_co2,years_before_present,bigint,YES,,Publique,
+26,urban_climate,city,text,YES,,Publique,
+27,urban_climate,country,text,YES,,Publique,
+28,urban_climate,data_source,text,YES,,Interne,
+29,urban_climate,humidity_percent,double,YES,,Publique,Taux d’humidité moyen (%)
+30,urban_climate,latitude,double,YES,,Interne,
+31,urban_climate,longitude,double,YES,,Interne,
+32,urban_climate,month,bigint,YES,,Publique,
+33,urban_climate,precipitation_mm,double,YES,,Publique,
+34,urban_climate,temperature_celsius,double,YES,,Publique,Température moyenne de la zone urbaine (°C)
+35,urban_climate,urban_heat_island_intensity,double,YES,,Publique,Intensité de l’îlot de chaleur urbain (écart avec zone rurale)
+36,urban_climate,wind_speed_ms,double,YES,,Publique,Vitesse moyenne du vent en m/s
+37,urban_climate,year,bigint,YES,,Publique,
